@@ -1,5 +1,5 @@
 language: java
-jdk: oraclejdk9
+# jdk: oraclejdk9 -- using jdk-10-ea now
 
 sudo: false
 dist: trusty
@@ -11,8 +11,8 @@ branches:
 
 # Don't let Travis CI execute './gradlew assemble' by default
 install:
-# Display Gradle, Groovy, JVM and other versions
-  - ./gradlew -version
+# "dot source" the jdk installation script
+  - . ./src/scripts/install-jdk.sh
 
 script:
   - ./gradlew build --scan --stacktrace
