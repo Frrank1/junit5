@@ -114,6 +114,7 @@ allprojects { subproj ->
 		// mavenLocal()
 		mavenCentral()
 		maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+		maven { url 'https://dl.bintray.com/mockito/maven' } // until this or newer Mockito version lands on central
 	}
 
 	dependencies {

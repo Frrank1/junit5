@@ -10,5 +10,4 @@ wget http://download.java.net/java/jdk${JDK_FEATURE}/archive/${JDK_BUILD}/binari
 tar -xzf ${JDK_ARCHIVE}
 export JAVA_HOME=~/jdk-${JDK_FEATURE}
 export PATH=${JAVA_HOME}/bin:$PATH
-export _JAVA_OPTIONS="--permit-illegal-access -Xmx2048m -Xms512m"
 cd -
